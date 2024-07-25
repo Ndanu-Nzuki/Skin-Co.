@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin&Co.</title>
+    <style>
+        body {
+            background: url('icons/OnePager.png');
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            position: relative; 
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-left: 50px;
+        }
+        ul {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 0;
+            padding-left: 70px;
+        }
+        li {
+            text-align: center; 
+            cursor: pointer;
+        }
+        img {
+            width: 100px; 
+            height: 100px; 
+            display: block; 
+            margin: 0 auto;
+        }
+        .top-right-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        #searchContainer {
+            margin-right: 10px;
+        }
+        #cartIcon {
+            width: 30px; 
+            height: 30px; 
+        }
+        .login {
+            text-align: right;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+        .add-to-cart {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 10px;
+            font-size: 14px;
+            background-color: white;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .add-to-cart:hover {
+            background-color: pink;
+        }
+        .category-link {
+            display: block;
+            color: black;
+            text-decoration: none;
+        }
+        .category-link img {
+            display: block;
+            margin: 0 auto;
+        }
+        .category-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-right-container">
+        <div id="searchContainer">
+            <form id="addItemInput">
+                <input type="text" id="searchItem" name="item" placeholder="Type in item to search">
+                <button type="submit" id="search">🔎</button>
+            </form>
+        </div>
+        <img id="cartIcon" src="icons/cartIcon.jpeg" alt="Cart">
+    </div>
+
+    <h1>Skin&Co.</h1>
+    <h2>Shop by Category</h2>
+
+    <div class="list-container">
+        <ul id="categories">
+            <li>
+                <a href="cleansers.html" class="category-link">
+                    <img src="icons/cleansers.jpeg" alt="Cleanser 1">
+                    Cleansers
+                </a>
+            </li>
+            <li>
+                <a href="exfoliators.html" class="category-link">
+                    <img src="icons/exfoliators.jpeg" alt="Cleanser 2">
+                    Exfoliators
+                </a>
+            </li>
+            <li>
+                <a href="moisturizers.html" class="category-link">
+                    <img src="icons/moisturizer.jpeg" alt="Exfoliator 1">
+                    Moisturizers
+                </a>
+            </li>
+            <li>
+                <a href="serums.html" class="category-link">
+                    <img src="icons/serums.jpeg" alt="Retinol 1">
+                    Serums
+                </a>
+            </li>
+            <li>
+                <a href="sunProtection.html" class="category-link">
+                    <img src="icons/sunProtection.jpeg" alt="Serum 1">
+                    Sun Protection
+                </a>
+            </li>
+        </ul>
+
+        <h2>Some of the items in our catalogue</h2>
+        <ul id="items">
+            <li>
+                <img src="icons/cleanser1.jpeg" alt="Cleanser 1">
+                La Roche Posay Oil Cleanser
+                <a href="#" class="add-to-cart">➕</a>
+            </li>
+            <li>
+                <img src="icons/cleanser2.jpeg" alt="Cleanser 2">
+                La Roche Posay Effclar Cleanser
+                <a href="#" class="add-to-cart">➕</a>
+            </li>
+            <li>
+                <img src="icons/exfoliator1.jpeg" alt="Exfoliator 1">
+                Anua BHA exfoliator
+                <a href="#" class="add-to-cart">➕</a>
+            </li>
+            <li>
+                <img src="icons/retinol1.jpeg" alt="Retinol 1">
+                Anua Renewing Serum
+                <a href="#" class="add-to-cart">➕</a>
+            </li>
+            <li>
+                <img src="icons/serum1.jpeg" alt="Serum 1">
+                Anua Brightening Serum
+                <a href="#" class="add-to-cart">➕</a>
+            </li>
+            <li>
+                <img src="icons/spf1.jpeg" alt="SPF 1">
+                La Roche Posay SPF 50
+                <a href="#" class="add-to-cart">➕</a>
+            </li>
+        </ul>
+    </div>
+    <div class="login">
+        Already have an account with us?<a href="login.html"> Login here!</a>
+    </div>
+    <script></script>
+</body>
+</html>
